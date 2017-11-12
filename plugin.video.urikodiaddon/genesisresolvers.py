@@ -469,6 +469,30 @@ class realdebrid:
             return
 
 
+class Vidlox:
+    name = "vidlox"
+    domains = ['vidlox.tv']
+    pattern = '(?://|\.)(vidlox\.tv)/(?:embed-|)([0-9a-zA-Z]+)'
+
+    def __init__(self):
+        self.net = common.Net()
+
+    def get_media_url(self, host, media_id):
+        web_url = self.get_url(host, media_id)
+        headers = {'User-Agent': common.IE_USER_AGENT, 'Referer': web_url}
+        html = self.net.http_GET(web_url, headers=headers).content
+        url = re.findall('sources\s*:\s*\[(.+?)\]', html)[0]
+        url = re.findall('(?:\"|\')(http.+?)(?:\"|\')', url)
+        url = [i for i in url if '.mp4' in i] + [i for i in url if '.m3u8' in i]
+
+        if url:
+            return url[0] + helpers.append_headers(headers)
+        else:
+            raise ResolverError('File not found')
+
+    def get_url(self, host, media_id):
+        return 'http://%s/embed-%s.html' % (host, media_id)
+		
 class _180upload:
     def info(self):
         return {
