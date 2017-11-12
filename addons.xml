@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.urikodiaddon"
        name="urikodiaddon"
-       version="1.0"
+       version="1.1"
        provider-name="Uri">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -31,114 +31,17 @@
   </extension>
 </addon>
 
-<addon id="repository.aresproject" name="[COLOR blue]A[/COLOR][COLOR white]res Project[/COLOR]" version="0.0.6" provider-name="Ares Team">
-	<extension point="xbmc.addon.repository" name="AresRepo">
-		<info compressed="false">http://repo.ares-project.com/plugins/addons.xml</info>
-		<checksum>http://repo.ares-project.com/plugins/addons.xml.md5</checksum>
-		<datadir zip="true">http://repo.ares-project.com/plugins/</datadir>
+<addon id="urikodiaddon.repository" name="urikodiaddon.repository" version="0.0.1" provider-name="URI3612">
+	<extension point="xbmc.addon.repository" name="uri.repository">
+		<info compressed="false">https://raw.githubusercontent.com/URI3612/urikodiaddon.repository/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/URI3612/urikodiaddon.repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/URI3612/urikodiaddon.repository/master/repo/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>AresProject.</summary>
-		<description>Ares-Project Addons Source. Visit Us At https://ares-project.uk</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.colossus" name="[COLOR gold]Colossus Repository[/COLOR]" version="999.999.6" provider-name="Colossal">
-    <extension point="xbmc.addon.repository" name="[COLOR gold]Colossus Repository[/COLOR]">
-    <dir>
-        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/</datadir>
-    </dir>
-        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus/master/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Home Of 3rd Party Addons</summary>
-        <description></description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="repository.noobsandnerds" name="noobsandnerds Repository" version="2.1" provider-name="noobsandnerds">
-	<extension point="xbmc.addon.repository" name="noobsandnerds Repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
-		</dir>
-		<dir>
-	        <info compressed="true">https://github.com/dandy0850/dandymedia/raw/master/addons.xml</info>
-	        <checksum>https://github.com/dandy0850/dandymedia/raw/master/addons.xml.md5</checksum>
-	        <datadir zip="true">https://github.com/dandy0850/dandymedia/raw/master/repo</datadir>
-		</dir>
-		<dir>
-			<info compressed="false">https://github.com/OpenELEQ/repository.elysium/raw/master/elysium.xml</info>
-			<checksum>https://github.com/OpenELEQ/repository.elysium/raw/master/elysium.xml.md5</checksum>
-			<datadir zip="true">https://raw.github.com/OpenELEQ/repository.elysium/master/</datadir>
-		</dir>
-		<dir>
-	        <info compressed="true">https://raw.githubusercontent.com/catchup4kodi/catchup4kodi/master/zips/addons.xml</info>
-	        <checksum>https://raw.githubusercontent.com/catchup4kodi/catchup4kodi/master/zips/addons.xml.md5</checksum>
-	        <datadir zip="true">https://raw.githubusercontent.com/catchup4kodi/catchup4kodi/master/zips/</datadir>
-		</dir>
-		<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Home of The Community Portal</summary>
-		<description>Visit www.noobsandnerds.com and become a part of our great family, you get to choose what The Community Portal holds!</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.pancas" name="Pancas repository" version="1.0.4" provider-name="Pancas">
-	<extension point="xbmc.addon.repository" name="Pancas Add-on Repository">
-		<info compressed="false">http://raw.github.com/Sup3Roque/Pancas/master/addons.xml</info>
-		<checksum>http://raw.github.com/Sup3Roque/Pancas/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/Sup3Roque/Pancas/master/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Pancas Repo</summary>
-		<description>TV para todos sempre ao melhor preÃ§o</description>
+		<summary>Repositorio do Uri</summary>
+		<description>Addon com filmes em pt-pt</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-ï»¿<addon id="repository.smash" name="Smash repository" version="1.0.1" provider-name="SMASH">
-	<extension point="xbmc.addon.repository" name="Smash repository">
-	<dir>
-        <info compressed="false">http://mediarepos.net/Repos/smashrepo/addons.xml</info>
-        <checksum>http://mediarepos.net/Repos/smashrepo/addons.xml.md5</checksum>
-        <datadir zip="true">http://mediarepos.net/Repos/smashrepo/</datadir>
-	</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Under This Repo, I Will Host Addons With No Home,Bring Life To Dead Addons That Fully Work, Link To Repos From Devs (This will install current version the Dev Has) </summary>
-		<description lang="en">The People Under Some of the Kodi Groups made a big deal about me getting donations if you want to hep no matter what ppl say you can donate here paypal.me/BrianSMASH</description>
-		<platform>all</platform>
-		<forum></forum>
-        <website></website>
-		<news>sometimes people hate when someone ask for donations but if imma host so called addons and they not and other repos for devs which i am i made two for two guys with addons then donations help with hosting and vps cost which will be settings up</news>
-	</extension>
-</addon>
-
-<addon id="script.module.f4mproxy"
-	     name="f4m proxy"
-	     version="1.0.16"
-	     provider-name="Shani">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Proxy for f4m</summary>
-    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
-  </extension>
 </addon>
 </addons>
